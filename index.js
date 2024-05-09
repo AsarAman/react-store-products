@@ -26,7 +26,7 @@ app.get("/", function (req, res) {
   res.send("jell");
 });
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 const start = async () => {
   try {
